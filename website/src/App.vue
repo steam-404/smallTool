@@ -6,7 +6,7 @@
         <el-container>
             <el-aside>
                 <router-link to="/steam_404"><p>steam-404</p></router-link>
-                <router-link to="/linuo">linuo</router-link>
+                <router-link to="/linuo"><p>linuo</p></router-link>
                 <router-link to="/QQMessage"><p>QQ信息查询</p></router-link>
                 <router-link to="/QQGrade"><p>QQ等级加速</p></router-link>
                 <router-link to="/QQGame"><p>QQ游戏加速</p></router-link>
@@ -21,6 +21,9 @@
                 <router-link to="/baiduRecord"><p>百度收录查询</p></router-link>
                 <router-link to="/RandomComment"><p>网易云随机热门评论</p></router-link>
                 <router-link to="/RandomSong"><p>网易云随机歌曲</p></router-link>
+                <router-link to="/PortraitScreenImages"><p>随机竖屏图像</p></router-link>
+                <router-link to="/LandscapeScreenImages"><p>随机横屏图像</p></router-link>
+                <router-link to="/RandomHeadImages"><p>随机头像</p></router-link>
             </el-aside>
             <el-main>
                 <router-view></router-view>

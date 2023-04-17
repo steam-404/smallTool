@@ -18,6 +18,9 @@ import QrCodeGenerate from "@/components/QrCode/QrCode-generate.vue";
 import baiduRecord from '@/components/baiduRecord.vue'
 import RandomComment from '@/components/music163/RandomComment.vue'
 import RandomSong from '@/components/music163/RandomSong.vue'
+import PortraitScreenImages from '@/components/randomImages/PortraitScreenImages.vue'
+import LandscapeScreenImages from '@/components/randomImages/LandscapeScreenImages.vue'
+import RandomHeadImages from '@/components/randomImages/RandomHeadImages.vue'
 
 const routes = [
     {path: '/steam_404',component: steam_404},
@@ -35,7 +38,10 @@ const routes = [
     {path: '/QrCodeGenerate',component: QrCodeGenerate},
     {path: '/baiduRecord',component: baiduRecord},
     {path: '/RandomComment',component: RandomComment},
-    {path: '/RandomSong',component: RandomSong}
+    {path: '/RandomSong',component: RandomSong},
+    {path: '/PortraitScreenImages',component: PortraitScreenImages},
+    {path: '/LandscapeScreenImages',component: LandscapeScreenImages},
+    {path: '/RandomHeadImages',component: RandomHeadImages}
 ]
 const router=createRouter({
     history:createWebHashHistory(),
