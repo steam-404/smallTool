@@ -5,7 +5,8 @@
     <div id="main">
         <el-container>
             <el-aside>
-                <router-link to="/"><p>steam-404</p></router-link>
+                <router-link to="/steam_404"><p>steam-404</p></router-link>
+                <router-link to="/linuo">linuo</router-link>
                 <router-link to="/QQMessage"><p>QQ信息查询</p></router-link>
                 <router-link to="/QQGrade"><p>QQ等级加速</p></router-link>
                 <router-link to="/QQGame"><p>QQ游戏加速</p></router-link>

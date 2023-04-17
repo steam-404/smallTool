@@ -2,6 +2,8 @@
 import {createRouter} from "vue-router";
 import {createWebHashHistory} from "vue-router";
 
+import steam_404 from '@/components/author/steam-404.vue'
+import linuo from '@/components/author/linuo.vue'
 import QQMessage from '@/components/QQ/QQMessage.vue'
 import QQGrade from '@/components/QQ/QQGrade.vue'
 import QQGame from '@/components/QQ/QQGame.vue'
@@ -18,7 +20,8 @@ import RandomComment from '@/components/music163/RandomComment.vue'
 import RandomSong from '@/components/music163/RandomSong.vue'
 
 const routes = [
-    {path: '/'},
+    {path: '/steam_404',component: steam_404},
+    {path: '/linuo',component: linuo},
     {path: '/QQMessage', component:QQMessage},
     {path: '/QQGrade', component: QQGrade},
     {path: '/QQGame', component: QQGame},
