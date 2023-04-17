@@ -17,6 +17,9 @@
                 <router-link to="/websiteLogo"><p>获取网站logo</p></router-link>
                 <router-link to="/QrCodeAnalysis"><p>二维码解析</p></router-link>
                 <router-link to="/QrCodeGenerate"><p>二维码生成</p></router-link>
+                <router-link to="/baiduRecord"><p>百度收录查询</p></router-link>
+                <router-link to="/RandomComment"><p>网易云随机热门评论</p></router-link>
+                <router-link to="/RandomSong"><p>网易云随机歌曲</p></router-link>
             </el-aside>
             <el-main>
                 <router-view></router-view>

@@ -13,6 +13,9 @@ import websiteTitle from "@/components/website/websiteTitle.vue";
 import websiteLogo from "@/components/website/websiteLogo.vue";
 import QrCodeAnalysis from "@/components/QrCode/QrCode-analysis.vue";
 import QrCodeGenerate from "@/components/QrCode/QrCode-generate.vue";
+import baiduRecord from '@/components/baiduRecord.vue'
+import RandomComment from '@/components/music163/RandomComment.vue'
+import RandomSong from '@/components/music163/RandomSong.vue'
 
 const routes = [
     {path: '/'},
@@ -26,7 +29,10 @@ const routes = [
     {path: '/websiteTitle', component: websiteTitle},
     {path: '/websiteLogo', component: websiteLogo},
     {path: '/QrCodeAnalysis',component: QrCodeAnalysis},
-    {path: '/QrCodeGenerate',component: QrCodeGenerate}
+    {path: '/QrCodeGenerate',component: QrCodeGenerate},
+    {path: '/baiduRecord',component: baiduRecord},
+    {path: '/RandomComment',component: RandomComment},
+    {path: '/RandomSong',component: RandomSong}
 ]
 const router=createRouter({
     history:createWebHashHistory(),
