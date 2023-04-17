@@ -11,8 +11,8 @@
     </el-radio-group>
     <el-button type="success" @click="getMusic()">音乐,起~</el-button>
     <hr>
-    <img v-bind:src="musicPicture" alt="">
     <div id="music" v-show="show">
+        <img v-bind:src="musicPicture" alt="">
         <audio controls v-bind:src="musicURl">
             <a v-bind:href="musicURl"></a>
         </audio>
