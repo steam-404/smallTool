@@ -2,16 +2,22 @@
 export default {
     data() {
         return {
-            span: 'auto'
+            span: 'auto',
+            background:['']
+        }
+    },
+    methods: {
+        switchBackground() {
+            //     切换背景
         }
     }
 }
 </script>
 <template>
-    <div id="main">
+    <div id="main" @click="switchBackground">
         <el-row :gutter="20">
-            <router-link to="/steam_404">steam-404</router-link>
-            <router-link to="/linuo">linuo</router-link>
+<!--            <router-link to="/steam_404">steam-404</router-link>-->
+<!--            <router-link to="/linuo">linuo</router-link>-->
             <br>
             <el-col v-model:span="span">
                 <router-link to="/QQMessage">QQ信息查询</router-link>
@@ -64,13 +70,24 @@ export default {
             <el-col v-model:span="span">
                 <router-link to="/RandomHeadImages">随机头像</router-link>
             </el-col>
+            <el-col v-model:span="span">
+                <router-link to="/BuyerImages">淘宝买家随机图片</router-link>
+            </el-col>
         </el-row>
-        <hr>
-        <router-view></router-view>
+    </div>
+    <hr>
+    <div id="router-view">
+        <router-view>
+        </router-view>
     </div>
 </template>
 <style scoped>
 #main p {
     color: green;
+}
+#main {
+    background-image: url('./../public/App/backgroundGreen.svg');
+    width: auto;
+    height: auto;
 }
 </style>
