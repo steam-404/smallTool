@@ -3,7 +3,7 @@ export default {
     data() {
         return {
             span: 'auto',
-            background:['']
+            background: ['']
         }
     },
     methods: {
@@ -16,8 +16,8 @@ export default {
 <template>
     <div id="main" @click="switchBackground">
         <el-row :gutter="20">
-<!--            <router-link to="/steam_404">steam-404</router-link>-->
-<!--            <router-link to="/linuo">linuo</router-link>-->
+            <!--            <router-link to="/steam_404">steam-404</router-link>-->
+            <!--            <router-link to="/linuo">linuo</router-link>-->
             <br>
             <el-col v-model:span="span">
                 <router-link to="/QQMessage">QQ信息查询</router-link>
@@ -85,9 +85,21 @@ export default {
 #main p {
     color: green;
 }
+
 #main {
     background-image: url('./../public/App/backgroundGreen.svg');
     width: auto;
     height: auto;
+}
+
+a {
+    color: #00faff;
+    width: auto;
+    height: 2vh;
+    text-decoration: none;
+}
+a:hover{
+    transition: 0.3s;
+    color: blue;
 }
 </style>
