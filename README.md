@@ -1,7 +1,10 @@
 # smallTool
 实用小工具
 
-### API提供方 https://api.uomg.com/
+# 部署站点:[建建的工具箱](http://411.free.svipss.top/smallTool/)
+# 站点密码:``ikun``
+
+#### API提供方 https://api.uomg.com/
 
 - [x] 获取QQ相关信息
 - [x] QQ等级一键加速
