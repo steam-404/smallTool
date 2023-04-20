@@ -73,6 +73,9 @@ export default {
             <el-col v-model:span="span">
                 <router-link to="/BuyerImages">淘宝买家随机图片</router-link>
             </el-col>
+            <el-col v-model:span="span">
+                <router-link to="/baiduSearchImages">百度搜图</router-link>
+            </el-col>
         </el-row>
     </div>
     <hr>
@@ -87,8 +90,6 @@ export default {
 }
 #main p {
     color: green;
-    width: 100%;
-    height: 100vh;
 }
 
 #main {
@@ -106,5 +107,9 @@ a {
 a:hover{
     transition: 0.3s;
     color: blue;
+}
+router-view{
+    height: 100vh;
+    background-color: #95d475;
 }
 </style>

@@ -22,6 +22,7 @@ import PortraitScreenImages from '@/components/randomImages/PortraitScreenImages
 import LandscapeScreenImages from '@/components/randomImages/LandscapeScreenImages.vue'
 import RandomHeadImages from '@/components/randomImages/RandomHeadImages.vue'
 import BuyerImages from '@/components/taobao/BuyerImages.vue'
+import baiduSearchImages from '@/components/images/baiduSearchImages.vue'
 
 const routes = [
     {path: '/steam_404',component: steam_404},
@@ -43,7 +44,8 @@ const routes = [
     {path: '/PortraitScreenImages',component: PortraitScreenImages},
     {path: '/LandscapeScreenImages',component: LandscapeScreenImages},
     {path: '/RandomHeadImages',component: RandomHeadImages},
-    {path: '/BuyerImages',component: BuyerImages}
+    {path: '/BuyerImages',component: BuyerImages},
+    {path: '/baiduSearchImages',component: baiduSearchImages}
 ]
 const router=createRouter({
     history:createWebHashHistory(),
