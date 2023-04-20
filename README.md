@@ -1,8 +1,5 @@
-# smallTool
-
 # 部署站点:[建建的工具箱](http://411.free.svipss.top/smallTool/)
 # 站点密码:``ikun``
-
 
 - [x] 获取QQ相关信息
 - [x] QQ等级一键加速
