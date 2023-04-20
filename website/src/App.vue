@@ -82,12 +82,17 @@ export default {
     </div>
 </template>
 <style scoped>
+*{
+    background-color: #12c2e9;
+}
 #main p {
     color: green;
+    width: 100%;
+    height: 100vh;
 }
 
 #main {
-    background-image: url('./../public/App/backgroundGreen.svg');
+    background-image: url('assets/backgroundGreen.svg');
     width: auto;
     height: auto;
 }
