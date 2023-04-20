@@ -1,5 +1,4 @@
 # smallTool
-实用小工具
 
 # 部署站点:[建建的工具箱](http://411.free.svipss.top/smallTool/)
 # 站点密码:``ikun``
