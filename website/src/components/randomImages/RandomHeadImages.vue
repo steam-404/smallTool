@@ -1,4 +1,5 @@
 <!--author:steam-404-->
+<!--随机头像-->
 <template>
   <p>随机头像</p>
     <el-button type="success" @click="getMan()">获取(男)</el-button>

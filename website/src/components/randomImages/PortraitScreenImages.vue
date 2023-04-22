@@ -1,6 +1,7 @@
 <!--author:steam-404-->
+<!--随机竖屏照片-->
 <template>
-    <p>随机横屏照片</p>
+    <p>随机竖屏照片</p>
     <el-radio-group v-model="type" size="large">
         <el-radio-button label="美女" @click="woman"/>
         <el-radio-button label="二次元" @click="quadraticElement"/>
