@@ -1,9 +1,14 @@
 <script>
-export default {
+import vant from "@/components/Vanta/vanta.vue";
+import {defineComponent} from 'vue'
+
+export default defineComponent({
+    components:{
+        vant
+    },
     data() {
         return {
-            span: 'auto',
-            background: ['']
+
         }
     },
     methods: {
@@ -11,105 +16,52 @@ export default {
             //     切换背景
         }
     }
-}
+})
 </script>
 <template>
+    <div>
+        <vant></vant>
+    </div>
     <div id="main" @click="switchBackground">
         <el-row :gutter="20">
             <!--            <router-link to="/steam_404">steam-404</router-link>-->
             <!--            <router-link to="/linuo">linuo</router-link>-->
             <br>
-            <el-col v-model:span="span">
-                <router-link to="/QQMessage">QQ信息查询</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/QQGrade">QQ等级加速</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/QQGame">QQ游戏加速</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/QQDialogue">QQ强制对话</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/QQAddGroup">QQ强制加群</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/visitorMessage">获取访客信息</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/ICP">ICP备案查询</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/websiteTitle">获取网站标题</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/websiteLogo">获取网站logo</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/QrCodeAnalysis">二维码解析</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/QrCodeGenerate">二维码生成</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/baiduRecord">百度收录查询</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/RandomComment">网易云随机热门评论</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/RandomSong">网易云随机歌曲</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/PortraitScreenImages">随机竖屏图像</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/LandscapeScreenImages">随机横屏图像</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/RandomHeadImages">随机头像</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/BuyerImages">淘宝买家随机图片</router-link>
-            </el-col>
-            <el-col v-model:span="span">
-                <router-link to="/baiduSearchImages">百度搜图</router-link>
-            </el-col>
+            <router-link to="/QQMessage">QQ信息查询</router-link>
+            <router-link to="/QQGrade">QQ等级加速</router-link>
+            <router-link to="/QQGame">QQ游戏加速</router-link>
+            <router-link to="/QQDialogue">QQ强制对话</router-link>
+            <router-link to="/QQAddGroup">QQ强制加群</router-link>
+            <router-link to="/visitorMessage">获取访客信息</router-link>
+            <router-link to="/ICP">ICP备案查询</router-link>
+            <router-link to="/websiteTitle">获取网站标题</router-link>
+            <router-link to="/websiteLogo">获取网站logo</router-link>
+            <router-link to="/QrCodeAnalysis">二维码解析</router-link>
+            <router-link to="/QrCodeGenerate">二维码生成</router-link>
+            <router-link to="/baiduRecord">百度收录查询</router-link>
+            <router-link to="/RandomComment">网易云随机热门评论</router-link>
+            <router-link to="/RandomSong">网易云随机歌曲</router-link>
+            <router-link to="/PortraitScreenImages">随机竖屏图像</router-link>
+            <router-link to="/LandscapeScreenImages">随机横屏图像</router-link>
+            <router-link to="/RandomHeadImages">随机头像</router-link>
+            <router-link to="/BuyerImages">淘宝买家随机图片</router-link>
+            <router-link to="/baiduSearchImages">百度搜图</router-link>
+            <router-link to="/translation">文本翻译</router-link>
+            <router-link to="/dogLickingDiary">舔狗日记</router-link>
+            <router-link to="/poisonousChickenSoup">毒鸡汤</router-link>
+            <router-link to="/phoneNumberValuation">手机号码估值</router-link>
+            <router-link to="/QQNumberValuation">QQ号码估值</router-link>
         </el-row>
     </div>
     <hr>
-    <div id="router-view">
-        <router-view>
-        </router-view>
-    </div>
+    <router-view></router-view>
 </template>
 <style scoped>
-*{
-    background-color: #12c2e9;
+html,body{
+    width: 100%;
+    height: 100%;
 }
-#main p {
-    color: green;
-}
-
-#main {
-    background-image: url('assets/backgroundGreen.svg');
-    width: auto;
-    height: auto;
-}
-
 a {
-    color: #00faff;
-    width: auto;
-    height: 2vh;
-    text-decoration: none;
-}
-a:hover{
-    transition: 0.3s;
-    color: blue;
-}
-router-view{
-    height: 100vh;
-    background-color: #95d475;
+    color: #79bbff;
 }
 </style>

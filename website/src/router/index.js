@@ -44,11 +44,21 @@ import BuyerImages from '@/components/taobao/BuyerImages.vue'
 // 淘宝买家秀图片
 import baiduSearchImages from '@/components/images/baiduSearchImages.vue'
 // 百度搜图
+import translation from '@/components/youdao/translation.vue'
+// 文本翻译
+import dogLickingDiary from '@/components/dogLickingDiary.vue'
+// 舔狗日记
+import poisonousChickenSoup from '@/components/poisonousChickenSoup.vue'
+// 毒鸡汤
+import phoneNumberValuation from "@/components/phoneNumberValuation.vue";
+// 手机号估值
+import QQNumberValuation from "@/components/QQNumberValuation.vue";
+// QQ号估值
 
 const routes = [
-    {path: '/steam_404',component: steam_404},
-    {path: '/linuo',component: linuo},
-    {path: '/QQMessage', component:QQMessage},
+    {path: '/steam_404', component: steam_404},
+    {path: '/linuo', component: linuo},
+    {path: '/QQMessage', component: QQMessage},
     {path: '/QQGrade', component: QQGrade},
     {path: '/QQGame', component: QQGame},
     {path: '/QQDialogue', component: QQDialogue},
@@ -57,19 +67,24 @@ const routes = [
     {path: '/ICP', component: ICP},
     {path: '/websiteTitle', component: websiteTitle},
     {path: '/websiteLogo', component: websiteLogo},
-    {path: '/QrCodeAnalysis',component: QrCodeAnalysis},
-    {path: '/QrCodeGenerate',component: QrCodeGenerate},
-    {path: '/baiduRecord',component: baiduRecord},
-    {path: '/RandomComment',component: RandomComment},
-    {path: '/RandomSong',component: RandomSong},
-    {path: '/PortraitScreenImages',component: PortraitScreenImages},
-    {path: '/LandscapeScreenImages',component: LandscapeScreenImages},
-    {path: '/RandomHeadImages',component: RandomHeadImages},
-    {path: '/BuyerImages',component: BuyerImages},
-    {path: '/baiduSearchImages',component: baiduSearchImages}
+    {path: '/QrCodeAnalysis', component: QrCodeAnalysis},
+    {path: '/QrCodeGenerate', component: QrCodeGenerate},
+    {path: '/baiduRecord', component: baiduRecord},
+    {path: '/RandomComment', component: RandomComment},
+    {path: '/RandomSong', component: RandomSong},
+    {path: '/PortraitScreenImages', component: PortraitScreenImages},
+    {path: '/LandscapeScreenImages', component: LandscapeScreenImages},
+    {path: '/RandomHeadImages', component: RandomHeadImages},
+    {path: '/BuyerImages', component: BuyerImages},
+    {path: '/baiduSearchImages', component: baiduSearchImages},
+    {path: '/translation', component: translation},
+    {path: '/dogLickingDiary', component: dogLickingDiary},
+    {path: '/poisonousChickenSoup',component: poisonousChickenSoup},
+    {path: '/phoneNumberValuation',component: phoneNumberValuation},
+    {path: '/QQNumberValuation',component: QQNumberValuation}
 ]
-const router=createRouter({
-    history:createWebHashHistory(),
+const router = createRouter({
+    history: createWebHashHistory(),
     routes
 })
 export default router
