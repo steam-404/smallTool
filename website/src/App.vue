@@ -3,13 +3,11 @@ import vant from "@/components/Vanta/vanta.vue";
 import {defineComponent} from 'vue'
 
 export default defineComponent({
-    components:{
+    components: {
         vant
     },
     data() {
-        return {
-
-        }
+        return {}
     },
     methods: {
         switchBackground() {
@@ -19,11 +17,9 @@ export default defineComponent({
 })
 </script>
 <template>
-    <div>
-        <vant></vant>
-    </div>
+    <vant></vant>
     <div id="main" @click="switchBackground">
-        <el-row :gutter="20">
+        <el-row>
             <!--            <router-link to="/steam_404">steam-404</router-link>-->
             <!--            <router-link to="/linuo">linuo</router-link>-->
             <br>
@@ -53,15 +49,44 @@ export default defineComponent({
             <router-link to="/QQNumberValuation">QQ号码估值</router-link>
         </el-row>
     </div>
-    <hr>
+
     <router-view></router-view>
 </template>
 <style scoped>
-html,body{
+#main {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+html, body {
     width: 100%;
     height: 100%;
 }
+
 a {
-    color: #79bbff;
+    color: blue;
+    cursor: pointer;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+a:link {
+    color: #06F;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #999;
+    text-decoration: line-through;
+}
+
+a:hover {
+    color: #F0F;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #F0F;
 }
 </style>
