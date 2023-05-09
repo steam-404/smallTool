@@ -47,6 +47,7 @@ export default defineComponent({
             <router-link to="/poisonousChickenSoup">毒鸡汤</router-link>
             <router-link to="/phoneNumberValuation">手机号码估值</router-link>
             <router-link to="/QQNumberValuation">QQ号码估值</router-link>
+            <router-link to="/CarId">车牌号查询</router-link>
         </el-row>
     </div>
 

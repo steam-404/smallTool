@@ -54,6 +54,8 @@ import phoneNumberValuation from "@/components/phoneNumberValuation.vue";
 // 手机号估值
 import QQNumberValuation from "@/components/QQNumberValuation.vue";
 // QQ号估值
+import CarId from '@/components/CarId.vue'
+// 车牌号查询
 
 const routes = [
     {path: '/steam_404', component: steam_404},
@@ -81,7 +83,8 @@ const routes = [
     {path: '/dogLickingDiary', component: dogLickingDiary},
     {path: '/poisonousChickenSoup',component: poisonousChickenSoup},
     {path: '/phoneNumberValuation',component: phoneNumberValuation},
-    {path: '/QQNumberValuation',component: QQNumberValuation}
+    {path: '/QQNumberValuation',component: QQNumberValuation},
+    {path: '/CarId',component: CarId}
 ]
 const router = createRouter({
     history: createWebHashHistory(),
